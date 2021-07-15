@@ -102,8 +102,8 @@
       
          <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
         
-            <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Book Now</a>
-      
+            <a class="font-small" target = "_blank" href="https://calendly.com/caro-landscaping/15min">Book Now</a>
+        
 
               
         <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
@@ -154,8 +154,9 @@ class="flex relative flex-col w-full  bg-green-900 text-white  lg:flex-row lg:fl
             </h2>
             <div id="cover-button">
                  
-            <div id="" class="flex text-center justify-center items-center z-50" x-data="{open: false}">
-                
+            <a id="" class="" target = "_blank" href="https://calendly.com/caro-landscaping/15min">
+                <div class="flex text-center justify-center items-center">
+                    
 <button 
  
     onMouseOver="this.style.backgroundColor='white'; this.style.color='#0D276A' "
@@ -166,86 +167,29 @@ class="flex relative flex-col w-full  bg-green-900 text-white  lg:flex-row lg:fl
     <h5 class="text-3xl font-extrabold">Book Now</h5> 
 </button>
 
-                <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-            <h3 class="mb-6 text-2xl font-medium text-black text-center">Book Now</h3>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
-        </div>
-        <div class="block">
-        <button type="button" 
-         
-            onMouseOver="this.style.backgroundColor='#0D276A'; this.style.color='#E64D3D' "
-            onMouseOut="this.style.backgroundColor='#E64D3D'; this.style.color='white'"
-            style="background-color:#E64D3D; color:white"               
-
-         
-        onclick= "send_sms(1, 'caro-landscaping')" 
-        class="w-full px-3 py-4 font-bold font-lg text-white  bg-green-400 text-white hover:bg-black hover:text-green-400 rounded-lg">Send</button> 
-        </div>           
-
-    </form>
-</div>
-
-            </div>
- 
+                </div>
+            </a>
+             
             </div>
 
             <div >
                  
-            <div id="" class="flex text-center justify-center items-center z-50" x-data="{open: false}">
-                
+            <a id="side-button" class="mb-3 fixed bottom-0 -right-80 z-10 mr-3 md:mr-0 z-50" target = "_blank" href="https://calendly.com/caro-landscaping/15min">
+                <div class="flex text-center justify-center items-center">
+                    
 <button 
  
     onMouseOver="this.style.backgroundColor='white'; this.style.color='#0D276A' "
     onMouseOut="this.style.backgroundColor='#E64D3D'; this.style.color='white'"
     style="background-color:#E64D3D; color:white"               
 
- id="side-button" type="button" x-on:click.prevent="open = true" class="mb-3 fixed bottom-0 -right-80 z-10 mr-3 md:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-green-400 text-white hover:bg-white hover:text-green-900">
+ id="" type="button" x-on:click.prevent="open = true" class=" inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-green-400 text-white hover:bg-white hover:text-green-900">
     <h5 class="text-3xl font-extrabold">Book Now</h5> 
 </button>
 
-                <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-            <h3 class="mb-6 text-2xl font-medium text-black text-center">Book Now</h3>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
-        </div>
-        <div class="block">
-        <button type="button" 
-         
-            onMouseOver="this.style.backgroundColor='#0D276A'; this.style.color='#E64D3D' "
-            onMouseOut="this.style.backgroundColor='#E64D3D'; this.style.color='white'"
-            style="background-color:#E64D3D; color:white"               
-
-         
-        onclick= "send_sms(2, 'caro-landscaping')" 
-        class="w-full px-3 py-4 font-bold font-lg text-white  bg-green-400 text-white hover:bg-black hover:text-green-400 rounded-lg">Send</button> 
-        </div>           
-
-    </form>
-</div>
-
-            </div>
-
+                </div>
+            </a>
+            
             </div>
         </div>
     </div>
@@ -886,7 +830,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                 
                                  
                 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-green-900  cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-green-400  lg:text-left">
-                    <span class = "flex text-left lg:text-left">What differentiates Caro's Landscaping from others?</span>
+                    <span class = "flex text-left lg:text-left">Do you provide estimates upfront and are you competitively priced?</span>
                     <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </h3>
                 <p  style= "color:#0D276A"  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-green-900 text-center lg:text-left"
@@ -911,7 +855,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                 
                                  
                 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-green-900  cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-green-400  lg:text-left">
-                    <span class = "flex text-left lg:text-left">Do you provide estimates upfront and are you competitively priced?</span>
+                    <span class = "flex text-left lg:text-left">What differentiates Caro's Landscaping from others?</span>
                     <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </h3>
                 <p  style= "color:#0D276A"  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-green-900 text-center lg:text-left"
