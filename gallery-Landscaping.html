@@ -84,17 +84,17 @@
     <!-- for desktop -->
     <div class="hidden lg:group-hover:opacity-100 lg:opacity-0 transition duration-500 ease-in-out lg:flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
         
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
-        
             <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Hardscaping"> Hardscaping </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
         
     </div> 
     <!-- for mobile b/c can't enable tailwind variants w/o postcss build -->
     <div id='mobile-dropdown' class="lg:hidden hidden transition duration-500 ease-in-out flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
         
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
-        
             <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Hardscaping"> Hardscaping </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
         
     </div> 
 
@@ -120,7 +120,7 @@
       
           <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
             <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="0-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -160,11 +160,15 @@
         
         
             
+        
+        
+            
                 
     
     
+    
  
-    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+    <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
         
 <button 
  
@@ -175,12 +179,12 @@
  id="side-button" type="button" x-on:click.prevent="open = true" class=" 
   
 
-   mb-3 fixed bottom-0 -right-80 z-10 mr-3 md:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-green-400 text-white hover:bg-white hover:text-green-900">
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 md:mr-0 z-40 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-green-400 text-white hover:bg-white hover:text-green-900 z-30">
     <h5 class="text-3xl font-extrabold">Book Now</h5> 
 </button>
 
         <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Book Now</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
@@ -216,66 +220,66 @@
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
             <h2  style= "color:#0D276A" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Landscaping</h2>
             <h2  style= "color:#E64D3D" class="my-3 mb-10 text-xl font-medium  text-green-400  text-center">Our Best Work</h2>
-            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/evan-dvorkin-YWDVrk4C6F0-unsplash_1.jpg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/VO50HKCRJ7X64U08K1GX9IQFGLFG20DPJRCQMUQS.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/86D9IYPFHECTLWFAJ6QUMTSQOAIB0OQ51NXY0NRQ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/TS584W7WZQ740DGO8FSDQQM31FI8RAGDY4YR06XY.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/8K2ISU0LX2BE7HQIS15Z91LSW33C8SC95XGVQ3TN.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/3LCG97JZYDQM23HPINB110KY2TTZB0N19ZHR67NF.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/X76PKEGRWGYIJW8XPQP3ASQPRS5JEXBIU29YY7B0.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/5ESVMJPS7ETZO6P0T6FRGI0SD2N8F3613JI09ZFY.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/joel-nevius-vhiMiwU06AE-unsplash.jpg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/pexels-pixabay-209296.jpg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/evan-dvorkin-TbMRBpXWPG4-unsplash.jpg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/pexels-pixabay-280222.jpg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/pexels-pixabay-209296.jpg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/evan-dvorkin-TbMRBpXWPG4-unsplash.jpg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/evan-dvorkin-YWDVrk4C6F0-unsplash_1.jpg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/pexels-pixabay-280222.jpg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/5ESVMJPS7ETZO6P0T6FRGI0SD2N8F3613JI09ZFY.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/joel-nevius-vhiMiwU06AE-unsplash.jpg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/3LCG97JZYDQM23HPINB110KY2TTZB0N19ZHR67NF.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/VO50HKCRJ7X64U08K1GX9IQFGLFG20DPJRCQMUQS.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/X76PKEGRWGYIJW8XPQP3ASQPRS5JEXBIU29YY7B0.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/8K2ISU0LX2BE7HQIS15Z91LSW33C8SC95XGVQ3TN.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/86D9IYPFHECTLWFAJ6QUMTSQOAIB0OQ51NXY0NRQ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/TS584W7WZQ740DGO8FSDQQM31FI8RAGDY4YR06XY.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/evan-dvorkin-YWDVrk4C6F0-unsplash_1.jpg"  alt = "Photo number 10 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/pexels-pixabay-209296.jpg"  alt = "Photo number 12 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VO50HKCRJ7X64U08K1GX9IQFGLFG20DPJRCQMUQS.jpeg"  alt = "Photo number 3 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Tree Pruning job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/evan-dvorkin-TbMRBpXWPG4-unsplash.jpg"  alt = "Photo number 14 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/86D9IYPFHECTLWFAJ6QUMTSQOAIB0OQ51NXY0NRQ.jpeg"  alt = "Photo number 7 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/evan-dvorkin-YWDVrk4C6F0-unsplash_1.jpg"  alt = "Photo number 10 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/TS584W7WZQ740DGO8FSDQQM31FI8RAGDY4YR06XY.jpeg"  alt = "Photo number 9 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/pexels-pixabay-280222.jpg"  alt = "Photo number 15 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8K2ISU0LX2BE7HQIS15Z91LSW33C8SC95XGVQ3TN.jpeg"  alt = "Photo number 5 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Fence Installation job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/5ESVMJPS7ETZO6P0T6FRGI0SD2N8F3613JI09ZFY.jpeg"  alt = "Photo number 6 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mulch Installation job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3LCG97JZYDQM23HPINB110KY2TTZB0N19ZHR67NF.jpeg"  alt = "Photo number 2 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Tree Pruning job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/joel-nevius-vhiMiwU06AE-unsplash.jpg"  alt = "Photo number 11 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Tree Pruning job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X76PKEGRWGYIJW8XPQP3ASQPRS5JEXBIU29YY7B0.jpeg"  alt = "Photo number 4 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Pavers job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3LCG97JZYDQM23HPINB110KY2TTZB0N19ZHR67NF.jpeg"  alt = "Photo number 2 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Tree Pruning job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/5ESVMJPS7ETZO6P0T6FRGI0SD2N8F3613JI09ZFY.jpeg"  alt = "Photo number 6 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mulch Installation job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VO50HKCRJ7X64U08K1GX9IQFGLFG20DPJRCQMUQS.jpeg"  alt = "Photo number 3 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Tree Pruning job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/joel-nevius-vhiMiwU06AE-unsplash.jpg"  alt = "Photo number 11 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Tree Pruning job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X76PKEGRWGYIJW8XPQP3ASQPRS5JEXBIU29YY7B0.jpeg"  alt = "Photo number 4 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Pavers job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/pexels-pixabay-209296.jpg"  alt = "Photo number 12 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8K2ISU0LX2BE7HQIS15Z91LSW33C8SC95XGVQ3TN.jpeg"  alt = "Photo number 5 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Fence Installation job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/evan-dvorkin-TbMRBpXWPG4-unsplash.jpg"  alt = "Photo number 14 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/86D9IYPFHECTLWFAJ6QUMTSQOAIB0OQ51NXY0NRQ.jpeg"  alt = "Photo number 7 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
                     
                                     
                         
                               
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/pexels-pixabay-280222.jpg"  alt = "Photo number 15 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/TS584W7WZQ740DGO8FSDQQM31FI8RAGDY4YR06XY.jpeg"  alt = "Photo number 9 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a Mowing job"   loading="lazy" ></div>
                     
                  
                                     
@@ -358,9 +362,6 @@
             
 </div>
 
-            
-        
-        
             
         
     
