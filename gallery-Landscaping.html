@@ -87,11 +87,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
             <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
         
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Hardscaping"> Hardscaping </a>
+        
     </div> 
     <!-- for mobile b/c can't enable tailwind variants w/o postcss build -->
     <div id='mobile-dropdown' class="lg:hidden hidden transition duration-500 ease-in-out flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
         
             <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Hardscaping"> Hardscaping </a>
         
     </div> 
 
@@ -134,6 +138,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="block">
         <button type="button" 
          
+            onMouseOver="this.style.backgroundColor='#0f0'; this.style.color='#f00' "
+            onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
+            style="background-color:#f00; color:white"               
+
+         
         onclick= "send_sms(0, 'caro-landscaping')" 
         class="w-full px-3 py-4 font-bold font-lg text-white  bg-green-400 text-white hover:bg-black hover:text-green-400 rounded-lg">Send</button> 
         </div>           
@@ -160,6 +169,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
         
 <button 
+ 
+    onMouseOver="this.style.backgroundColor='white'; this.style.color='#0f0' "
+    onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
+    style="background-color:#f00; color:white"               
+
  id="side-button" type="button" x-on:click.prevent="open = true" class=" 
   
 
@@ -185,6 +199,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="block">
         <button type="button" 
          
+            onMouseOver="this.style.backgroundColor='#0f0'; this.style.color='#f00' "
+            onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
+            style="background-color:#f00; color:white"               
+
+         
         onclick= "send_sms(2, 'caro-landscaping')" 
         class="w-full px-3 py-4 font-bold font-lg text-white  bg-green-400 text-white hover:bg-black hover:text-green-400 rounded-lg">Send</button> 
         </div>           
@@ -197,20 +216,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden  mt-24   bg-white text-green-900   md:pt-20 xl:pt-20 xl:pb-20">
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
-            <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Landscaping</h2>
-            <h2 class="my-3 mb-10 text-xl font-medium  text-green-400  text-center">Our Best Work</h2>
-            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/c66d848e-1f92-4088-9f86-6d401237eb53.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/96d38219-7c20-4400-8a29-9a632243db1b.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/03231125-b5be-4816-bb36-230e7d7518c3.png', 'photo'],   ] }" @keydown.escape= "open = false"   >
+            <h2  style= "color:#0f0" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Landscaping</h2>
+            <h2  style= "color:#f00" class="my-3 mb-10 text-xl font-medium  text-green-400  text-center">Our Best Work</h2>
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/ed126349-5b45-42ce-a8c6-3409d39cd850.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/6199bea1-bd01-4ac1-950b-ea066f458935.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/5d31d3cb-9a61-49f7-922d-ac408e6dd9a1.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/e3e6e9b9-a04b-441d-908d-113cf36bad6e.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/31debcac-e933-42f8-9745-fd719716f182.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/87dcd3cc-defd-4738-bf25-0ae701c9e4b8.png', 'photo'],   ] }" @keydown.escape= "open = false"   >
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c66d848e-1f92-4088-9f86-6d401237eb53.png"  alt = "Photo number 1 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ed126349-5b45-42ce-a8c6-3409d39cd850.png"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/96d38219-7c20-4400-8a29-9a632243db1b.png"  alt = "Photo number 1 of Caro&#x27;s Landscaping &amp; Lawncare&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6199bea1-bd01-4ac1-950b-ea066f458935.png"  alt="photo of best work"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/03231125-b5be-4816-bb36-230e7d7518c3.png"  alt="photo of best work"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5d31d3cb-9a61-49f7-922d-ac408e6dd9a1.png"  alt="photo of best work"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e3e6e9b9-a04b-441d-908d-113cf36bad6e.png"  alt="photo of best work"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/31debcac-e933-42f8-9745-fd719716f182.png"  alt="photo of best work"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/87dcd3cc-defd-4738-bf25-0ae701c9e4b8.png"  alt="photo of best work"   loading="lazy" ></div>
                     
                  
                                     
@@ -222,7 +253,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                     <div class="flex items-center justify-start w-12  ml-6 md:m-2 z-50 absolute bottom-1/4 md:bottom-0 transform translate-x-12 md:translate-x-32" >
                     <button
-                    
+                     style= "background-color:#f00" 
                             class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-green-400"                                
                             @click="open = false">
                          <span class = "text-white"> <i class="fas fa-lg fa-times"></i> </span>
@@ -252,7 +283,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     </template> 
                                     
                                 </div>
-                                <div  class="fixed text-green-400 text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
+                                <div  style= "color:#f00"  class="fixed text-green-400 text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
                                     x-show="activeSlide === index">
                                     <span class="w-12 text-right" x-text="index + 1"></span>
                                     <span class="w-4 text-center">/</span>
@@ -265,7 +296,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
                         <button 
                                 type="button"
-                                
+                                 style= "background-color:#f00" 
                                 class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-green-400" 
                                
                                 @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
@@ -276,7 +307,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="flex items-center justify-start w-12 md:ml-16">
                         <button 
                                 type="button"
-                                
+                                 style= "background-color:#f00" 
                                 class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center  bg-green-400   "
                                
                                 @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
@@ -294,30 +325,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
             
         
+        
+            
+        
     
 
-<section  class="py-10 bg-green-900">
+<section  style= "background-color:#0f0"   class="py-10 bg-green-900">
     
         <div class="flex flex-col justify-around text-center md:flex-row">
             <p class="order-last text-sm leading-tight text-green-400 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
              
             <ul class="flex flex-row flex-wrap text-center justify-center pb-3 lg:-ml-4 lg:-mr-4 text-sm">
-                <li> <a  href="#about" class="px-2 md:px-4 text-green-400 hover:text-white">About Us</a> </li>
+                <li> <a  style= "color:#f00"  href="#about" class="px-2 md:px-4 text-green-400 hover:text-white">About Us</a> </li>
                 
-                <li> <a  href="#services" class="px-2 md:px-4 text-green-400 hover:text-white">Our Services</a> </li>
-                
-                
-                <li> <a  href="#our-work" class=" px-2 md:px-4 text-green-400 hover:text-white">Our Best Work</a> </li>
+                <li> <a   style= "color:#f00" href="#services" class="px-2 md:px-4 text-green-400 hover:text-white">Our Services</a> </li>
                 
                 
-                <li> <a  href="#testimonials" class="px-2 md:px-4 text-green-400 hover:text-white">Testimonials &amp; Reviews</a></li>
+                <li> <a style= "color:#f00"   href="#our-work" class=" px-2 md:px-4 text-green-400 hover:text-white">Our Best Work</a> </li>
                 
                 
-                <li> <a  href="#faqs" class="px-2 md:px-4 text-green-400 hover:text-white">Faqs</a></li>
+                <li> <a  style= "color:#f00"  href="#testimonials" class="px-2 md:px-4 text-green-400 hover:text-white">Testimonials &amp; Reviews</a></li>
+                
+                
+                <li> <a  style= "color:#f00"  href="#faqs" class="px-2 md:px-4 text-green-400 hover:text-white">Faqs</a></li>
                 
                 
                 
-                <li> <a  href="#find-us" class=" px-2 md:px-4 text-green-400 hover:text-white">Service Areas</a></li>
+                <li> <a  style= "color:#f00"  href="#find-us" class=" px-2 md:px-4 text-green-400 hover:text-white">Service Areas</a></li>
                 
             </ul>
         </div>
