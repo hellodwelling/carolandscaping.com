@@ -104,7 +104,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   
       
-           
+      
+<a 
+    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
+    href="store">For Sale
+</a>
+     
       
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
@@ -158,6 +163,83 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
         
+    
+        
+ 
+    <div id="" class="flex text-center justify-center items-center  w-full lg:w-auto " x-data="{open: false}">
+        
+<button 
+ 
+    onMouseOver="this.style.backgroundColor='white'; this.style.color='#0f0' "
+    onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
+    style="background-color:#f00; color:white"               
+
+ id="side-button" type="button" x-on:click.prevent="open = true" class=" 
+  
+
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 md:mr-0 z-40 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-green-400 text-white hover:bg-white hover:text-green-900 z-30">
+    <h5 class="text-3xl font-extrabold">Book Now</h5> 
+</button>
+
+        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5 z-50">
+            <h3 class="mb-6 text-2xl font-medium text-black text-center">Book Now</h3>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+        </div>
+        <div class="block mb-4 border border-gray-200 rounded-lg">
+            <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+        </div>
+        <div class="block">
+        <button type="button" 
+         
+            onMouseOver="this.style.backgroundColor='#0f0'; this.style.color='#f00' "
+            onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
+            style="background-color:#f00; color:white"               
+
+         
+        onclick= "send_sms(2, 'caro-landscaping')" 
+        class="w-full px-3 py-4 font-bold font-lg text-white  bg-green-400 text-white hover:bg-black hover:text-green-400 rounded-lg">Send</button> 
+        </div>           
+
+    </form>
+</div>
+    </div>
+
+    
+
+    <div id="for-sale" class=" mt-24  relative mb-0 w-full pt-12 overflow-hidden bg-white md:pt-20 xl:pt-20 xl:pb-20">
+        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+            <h2  style= "color:#0f0"  class="mb-3 text-3xl text-green-900 font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">For Sale</h2>
+            <h2  style= "color:#f00"  class="my-3 mb-10 text-xl font-medium text-green-500 text-center">The best price and quality</h2>
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
+            
+                
+                <div class="flex flex-col sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 text-center space-y-3">
+                    
+                                                              
+                                <img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BU_u3OzjGJ.jpg"  loading="lazy" alt="photo of past work"> 
+                        
+                     
+                     
+                    <p  style= "color:#0f0"  class="font-medium  text-green-500 text-center"> Description </p>
+                    
+                     
+                    <p   style= "color:#f00"  class="font-large font-bold text-green-500 text-center"> Price </p>
+                                            
+                </div>  
+                                
+             
+            </div>                 
+        </div>
+    </div>
+    
 
 <section  style= "background-color:#0f0"   class="py-10 bg-green-900">
     
@@ -178,6 +260,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                 <li> <a  style= "color:#f00"  href="#faqs" class="px-2 md:px-4 text-green-400 hover:text-white">Faqs</a></li>
                 
+                
+                <li> <a  style= "color:#f00"  href="#for-sale" class="px-2 md:px-4 text-green-400 hover:text-white">For Sale</a></li>
                 
                 
                 <li> <a  style= "color:#f00"  href="#find-us" class=" px-2 md:px-4 text-green-400 hover:text-white">Service Areas</a></li>
