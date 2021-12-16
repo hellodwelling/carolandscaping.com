@@ -11,6 +11,12 @@
     <meta content="Caro&#x27;s Landscaping &amp; Lawncare" property="og:title">
 
     
+        <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" property="og:image">
+        <meta content="Caro&#x27;s Landscaping &amp; Lawncare" property="twitter:title">
+        <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" property="twitter:image">
+        <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" rel="shortcut icon" type="image/x-icon">
+        <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" rel="apple-touch-icon">     
+    
     <title>
          
             Austin, TX - Customer First Landscaping | Caro&#x27;s Landscaping &amp; Lawncare
@@ -51,8 +57,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
-        
-        <a href="index" class="text-lg font-bold tracking-widest  text-gray-900  uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Caro&#x27;s Landscaping &amp; Lawncare</a>
+      
+        <a href= " index "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" alt="Caro&#x27;s Landscaping &amp; Lawncare logo"> </a>
       
       <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -77,11 +83,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  
       
         
-<a 
-    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="gallery">Our Best Work
-</a>
- 
+
+<div id='mobile-dropdown-parent' onclick='toggleDropDownMobile()' class="px-4 py-2 mt-2 text-lg font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 group flex flex-col relative ">
+    <div> Galleries
+        <i class="fa fa-caret-down"></i>
+    </div>
+    <!-- for desktop -->
+    <div class="hidden lg:group-hover:opacity-100 lg:opacity-0 transition duration-500 ease-in-out lg:flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Hardscaping"> Hardscaping </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
+        
+    </div> 
+    <!-- for mobile b/c can't enable tailwind variants w/o postcss build -->
+    <div id='mobile-dropdown' class="lg:hidden hidden transition duration-500 ease-in-out flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Hardscaping"> Hardscaping </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
+        
+    </div> 
+
+</div>
+
+
+  
       
       
 <a 
@@ -122,7 +149,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="block">
         <button type="button" 
          
-            onMouseOver="this.style.backgroundColor='#0f0'; this.style.color='#f00' "
+            onMouseOver="this.style.backgroundColor='#aaa'; this.style.color='#f00' "
             onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
             style="background-color:#f00; color:white"               
 
@@ -141,7 +168,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 
-    <section   style= "background-color:#0f0"  
+    <section   style= "background-color:#aaa"  
 class="flex relative flex-col w-full  bg-green-900 text-white  lg:flex-row lg:flex-wrap sm:mx-auto pt-12 mt-12">
     <div class="flex justify-end p-8 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
         <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
@@ -174,7 +201,7 @@ class="flex relative flex-col w-full  bg-green-900 text-white  lg:flex-row lg:fl
         
 <button 
  
-    onMouseOver="this.style.backgroundColor='white'; this.style.color='#0f0' "
+    onMouseOver="this.style.backgroundColor='white'; this.style.color='#aaa' "
     onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
     style="background-color:#f00; color:white"               
 
@@ -203,7 +230,7 @@ class="flex relative flex-col w-full  bg-green-900 text-white  lg:flex-row lg:fl
         <div class="block">
         <button type="button" 
          
-            onMouseOver="this.style.backgroundColor='#0f0'; this.style.color='#f00' "
+            onMouseOver="this.style.backgroundColor='#aaa'; this.style.color='#f00' "
             onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
             style="background-color:#f00; color:white"               
 
@@ -225,7 +252,7 @@ class="flex relative flex-col w-full  bg-green-900 text-white  lg:flex-row lg:fl
         
 <button 
  
-    onMouseOver="this.style.backgroundColor='white'; this.style.color='#0f0' "
+    onMouseOver="this.style.backgroundColor='white'; this.style.color='#aaa' "
     onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
     style="background-color:#f00; color:white"               
 
@@ -254,7 +281,7 @@ class="flex relative flex-col w-full  bg-green-900 text-white  lg:flex-row lg:fl
         <div class="block">
         <button type="button" 
          
-            onMouseOver="this.style.backgroundColor='#0f0'; this.style.color='#f00' "
+            onMouseOver="this.style.backgroundColor='#aaa'; this.style.color='#f00' "
             onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
             style="background-color:#f00; color:white"               
 
@@ -276,7 +303,7 @@ class="flex relative flex-col w-full  bg-green-900 text-white  lg:flex-row lg:fl
 
     
         
-            <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X1V3FQZU08DUQMLGAGCEPF06LWNZ3WAJMNRC9L4T.jpeg"   alt = "Main hero image of Caro&#x27;s Landscaping &amp; Lawncare performing Landscaping work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+            <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8e769a87-f4f8-4a91-910c-94d2e9c51445aubrey-odom-uV-dSJ98q_U-unsplash%252520(1).jpg"   alt = "Main hero image of Caro&#x27;s Landscaping &amp; Lawncare performing Landscaping work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
             
     
     </div>
@@ -284,7 +311,7 @@ class="flex relative flex-col w-full  bg-green-900 text-white  lg:flex-row lg:fl
 
         
 </section>
-    <section  style= "color:#0f0 "   id = "about" 
+    <section  style= "color:#aaa "   id = "about" 
 class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  bg-white text-green-900 ">
         <div class="relative lg:w-1/2">
         
@@ -358,7 +385,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
             
                 <div class = "mt-10 mb-0 flex flex-row justify-center lg:justify-start text-center w-full lg:max-w-lg">
                 
-                    <h2  style= "color:#0f0 "  class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-green-900 font-extrabold leading-none tracking-wide text-center">
+                    <h2  style= "color:#aaa "  class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-green-900 font-extrabold leading-none tracking-wide text-center">
                         Connect with us on Social
                     </h2>
                 
@@ -486,7 +513,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
         
 <button 
  
-    onMouseOver="this.style.backgroundColor='white'; this.style.color='#0f0' "
+    onMouseOver="this.style.backgroundColor='white'; this.style.color='#aaa' "
     onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
     style="background-color:#f00; color:white"               
 
@@ -515,7 +542,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
         <div class="block">
         <button type="button" 
          
-            onMouseOver="this.style.backgroundColor='#0f0'; this.style.color='#f00' "
+            onMouseOver="this.style.backgroundColor='#aaa'; this.style.color='#f00' "
             onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
             style="background-color:#f00; color:white"               
 
@@ -530,7 +557,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
 
     
     
-    <section  style= "background-color:#0f0"   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-green-900 border-0 border-green-200 text-white border-solid ">
+    <section  style= "background-color:#aaa"   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-green-900 border-0 border-green-200 text-white border-solid ">
         <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24  mt-24 ">
             
             <h2 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
@@ -552,22 +579,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                             <i  style="color:#f00"  class="fas fa-check-square fa-3x pl-5 pr-5 text-green-400"></i>
                             <!-- <i  style="color:#f00"  class="fal fa-check fa-3x pl-5 pr-5 text-green-400"></i> -->
                             <div style="display:flex; justify-content: center; align-items:center">
-                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">abc</h3>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>        
-                    
-                <div class="max-w-xs col-span-4 font-sans rounded-lg border border-green-200 ">
-                        <a href= "services">
-                            <div class="box-border flex flex-col h-full md:py-8 leading-6 border-solid rounded-lg bg-white border-green-200">
-                                    
-                        <div  class="font-sans text-center border-green-200 flex justify-left">
-                            <i  style="color:#f00"  class="fas fa-check-square fa-3x pl-5 pr-5 text-green-400"></i>
-                            <!-- <i  style="color:#f00"  class="fal fa-check fa-3x pl-5 pr-5 text-green-400"></i> -->
-                            <div style="display:flex; justify-content: center; align-items:center">
-                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">aaaaa</h3>
+                                <h3  class="box-border text-lg font-bold leading-none tracking-wider border-solid text-gray-900">Mowing</h3>
                             </div>
                         </div>
                     </div>
@@ -600,7 +612,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     <div class="max-w-5xl px-12 mx-auto text-center xl:px-0">
    
 
-    <h2  style= "color:#0f0"   class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Service Areas </h2>
+    <h2  style= "color:#aaa"   class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Service Areas </h2>
     <h2  style= "color:#f00"  class="my-3 mb-10  text-xl font-medium text-green-400 text-center"> Proudly Serving   Austin & Surrounding Areas   </h2>
     <div style="height:500px; width:100%;" id="map"></div>
 
@@ -618,7 +630,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
 
     
 
-<section  style= "background-color:#0f0"   class="py-10 bg-green-900">
+<section  style= "background-color:#aaa"   class="py-10 bg-green-900">
     
         <div class="flex flex-col justify-around text-center md:flex-row">
             <p class="order-last text-sm leading-tight text-green-400 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
