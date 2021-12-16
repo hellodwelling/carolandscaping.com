@@ -11,6 +11,12 @@
     <meta content="Caro&#x27;s Landscaping &amp; Lawncare" property="og:title">
 
     
+        <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" property="og:image">
+        <meta content="Caro&#x27;s Landscaping &amp; Lawncare" property="twitter:title">
+        <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" property="twitter:image">
+        <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" rel="shortcut icon" type="image/x-icon">
+        <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" rel="apple-touch-icon">     
+    
     <title>
          
             Austin, TX - Customer First Landscaping | Caro&#x27;s Landscaping &amp; Lawncare
@@ -51,8 +57,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
-        
-        <a href="index" class="text-lg font-bold tracking-widest  text-gray-900  uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Caro&#x27;s Landscaping &amp; Lawncare</a>
+      
+        <a href= " index "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" alt="Caro&#x27;s Landscaping &amp; Lawncare logo"> </a>
       
       <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -77,11 +83,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  
       
         
-<a 
-    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="gallery">Our Best Work
-</a>
- 
+
+<div id='mobile-dropdown-parent' onclick='toggleDropDownMobile()' class="px-4 py-2 mt-2 text-lg font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 group flex flex-col relative ">
+    <div> Galleries
+        <i class="fa fa-caret-down"></i>
+    </div>
+    <!-- for desktop -->
+    <div class="hidden lg:group-hover:opacity-100 lg:opacity-0 transition duration-500 ease-in-out lg:flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Hardscaping"> Hardscaping </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
+        
+    </div> 
+    <!-- for mobile b/c can't enable tailwind variants w/o postcss build -->
+    <div id='mobile-dropdown' class="lg:hidden hidden transition duration-500 ease-in-out flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Hardscaping"> Hardscaping </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
+        
+    </div> 
+
+</div>
+
+
+  
       
       
 <a 
@@ -122,7 +149,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="block">
         <button type="button" 
          
-            onMouseOver="this.style.backgroundColor='#0f0'; this.style.color='#f00' "
+            onMouseOver="this.style.backgroundColor='#aaa'; this.style.color='#f00' "
             onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
             style="background-color:#f00; color:white"               
 
@@ -149,7 +176,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
 <button 
  
-    onMouseOver="this.style.backgroundColor='white'; this.style.color='#0f0' "
+    onMouseOver="this.style.backgroundColor='white'; this.style.color='#aaa' "
     onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
     style="background-color:#f00; color:white"               
 
@@ -178,7 +205,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="block">
         <button type="button" 
          
-            onMouseOver="this.style.backgroundColor='#0f0'; this.style.color='#f00' "
+            onMouseOver="this.style.backgroundColor='#aaa'; this.style.color='#f00' "
             onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
             style="background-color:#f00; color:white"               
 
@@ -195,7 +222,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div id="for-sale" class=" mt-24  relative mb-0 w-full pt-12 overflow-hidden bg-white md:pt-20 xl:pt-20 xl:pb-20">
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
-            <h2  style= "color:#0f0"  class="mb-3 text-3xl text-green-900 font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">For Sale</h2>
+            <h2  style= "color:#aaa"  class="mb-3 text-3xl text-green-900 font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">For Sale</h2>
             <h2  style= "color:#f00"  class="my-3 mb-10 text-xl font-medium text-green-500 text-center">The best price and quality</h2>
             <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
             
@@ -207,7 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         
                      
                      
-                    <p  style= "color:#0f0"  class="font-medium  text-green-500 text-center"> Description </p>
+                    <p  style= "color:#aaa"  class="font-medium  text-green-500 text-center"> Description </p>
                     
                      
                     <p   style= "color:#f00"  class="font-large font-bold text-green-500 text-center"> Price </p>
@@ -220,7 +247,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     
 
-<section  style= "background-color:#0f0"   class="py-10 bg-green-900">
+<section  style= "background-color:#aaa"   class="py-10 bg-green-900">
     
         <div class="flex flex-col justify-around text-center md:flex-row">
             <p class="order-last text-sm leading-tight text-green-400 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
