@@ -11,6 +11,12 @@
     <meta content="Caro&#x27;s Landscaping &amp; Lawncare" property="og:title">
 
     
+        <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" property="og:image">
+        <meta content="Caro&#x27;s Landscaping &amp; Lawncare" property="twitter:title">
+        <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" property="twitter:image">
+        <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" rel="shortcut icon" type="image/x-icon">
+        <link href="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" rel="apple-touch-icon">     
+    
     <title>
          
             Austin, TX - Customer First Landscaping | Caro&#x27;s Landscaping &amp; Lawncare
@@ -51,8 +57,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
-        
-        <a href="index" class="text-lg font-bold tracking-widest  text-gray-900  uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Caro&#x27;s Landscaping &amp; Lawncare</a>
+      
+        <a href= " index "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/5bec1914-d16c-47fc-8f6e-f504592ea305AdobeStock_362392315.jpeg" alt="Caro&#x27;s Landscaping &amp; Lawncare logo"> </a>
       
       <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -77,11 +83,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  
       
         
-<a 
-    class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
-    href="gallery">Our Best Work
-</a>
- 
+
+<div id='mobile-dropdown-parent' onclick='toggleDropDownMobile()' class="px-4 py-2 mt-2 text-lg font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 group flex flex-col relative ">
+    <div> Galleries
+        <i class="fa fa-caret-down"></i>
+    </div>
+    <!-- for desktop -->
+    <div class="hidden lg:group-hover:opacity-100 lg:opacity-0 transition duration-500 ease-in-out lg:flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Hardscaping"> Hardscaping </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
+        
+    </div> 
+    <!-- for mobile b/c can't enable tailwind variants w/o postcss build -->
+    <div id='mobile-dropdown' class="lg:hidden hidden transition duration-500 ease-in-out flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Hardscaping"> Hardscaping </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Landscaping"> Landscaping </a>
+        
+    </div> 
+
+</div>
+
+
+  
       
       
 <a 
@@ -122,7 +149,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="block">
         <button type="button" 
          
-            onMouseOver="this.style.backgroundColor='#0f0'; this.style.color='#f00' "
+            onMouseOver="this.style.backgroundColor='#aaa'; this.style.color='#f00' "
             onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
             style="background-color:#f00; color:white"               
 
@@ -149,7 +176,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
 <button 
  
-    onMouseOver="this.style.backgroundColor='white'; this.style.color='#0f0' "
+    onMouseOver="this.style.backgroundColor='white'; this.style.color='#aaa' "
     onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
     style="background-color:#f00; color:white"               
 
@@ -178,7 +205,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="block">
         <button type="button" 
          
-            onMouseOver="this.style.backgroundColor='#0f0'; this.style.color='#f00' "
+            onMouseOver="this.style.backgroundColor='#aaa'; this.style.color='#f00' "
             onMouseOut="this.style.backgroundColor='#f00'; this.style.color='white'"
             style="background-color:#f00; color:white"               
 
@@ -193,7 +220,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     
     
-    <section  style= "background-color:#0f0"   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-green-900 border-0 border-green-200 text-white border-solid ">
+    <section  style= "background-color:#aaa"   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-green-900 border-0 border-green-200 text-white border-solid ">
         <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24  mt-24 ">
             
             <h2 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
@@ -211,20 +238,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
                         <div  class="md:mt-6 font-sans text-center border-0 border-green-200 ">
-                            <h3  style= "color:#f00"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400  ">abc</h3>
-                            <p
-                                class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
-                                abc
-                            </p>
-                        </div>
-                    </div>
-                </div>        
-                    
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div  class="md:mt-6 font-sans text-center border-0 border-green-200 ">
-                            <h3  style= "color:#f00"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400  ">aaaaa</h3>
+                            <h3  style= "color:#f00"  class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400  ">Mowing</h3>
                             <p
                                 class="box-border mx-0 mt-3 mb-0 font-normal leading-snug text-center border-solid">
                                 asdfasdf
@@ -241,7 +255,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id= "faqs" class="py-16   bg-white text-green-900  md:py-20 lg:py-24">
     <div class="max-w-5xl px-12 mx-auto xl:px-0">
 
-        <h2  style= "color:#0f0"  class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl">Faqs</h2>
+        <h2  style= "color:#aaa"  class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl">Faqs</h2>
          <h2  style= "color:#f00"  class="my-3 mb-10  text-xl font-medium  text-green-400 text-center">Your questions answered</h2>
 
         <div class="relative mt-12 space-y-3">
@@ -252,15 +266,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div x-data="{ show: false }" class="relative overflow-hidden border-b border-green-100 select-none">
                 <h3  
                 onMouseOver="this.style.color='#f00' "
-                onMouseOut=" this.style.color='#0f0'"
-                style="color:#0f0;"               
+                onMouseOut=" this.style.color='#aaa'"
+                style="color:#aaa;"               
                 
                                  
                 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-green-900  cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-green-400  lg:text-left">
                     <span class = "flex text-left lg:text-left">What differentiates Caro's aagwrtwe from others?</span>
                     <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </h3>
-                <p  style= "color:#0f0"  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-green-900 text-center lg:text-left"
+                <p  style= "color:#aaa"  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-green-900 text-center lg:text-left"
                     x-transition:enter="transition-all ease-out duration-300"
                     x-transition:enter-start="opacity-0 transform -translate-y-4"
                     x-transition:enter-end="opacity-100 transform -translate-y-0"
@@ -277,15 +291,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div x-data="{ show: false }" class="relative overflow-hidden border-b border-green-100 select-none">
                 <h3  
                 onMouseOver="this.style.color='#f00' "
-                onMouseOut=" this.style.color='#0f0'"
-                style="color:#0f0;"               
+                onMouseOut=" this.style.color='#aaa'"
+                style="color:#aaa;"               
                 
                                  
                 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-green-900  cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-green-400  lg:text-left">
                     <span class = "flex text-left lg:text-left">Do you provide estimates upfront and are you competitively priced?</span>
                     <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </h3>
-                <p  style= "color:#0f0"  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-green-900 text-center lg:text-left"
+                <p  style= "color:#aaa"  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-green-900 text-center lg:text-left"
                     x-transition:enter="transition-all ease-out duration-300"
                     x-transition:enter-start="opacity-0 transform -translate-y-4"
                     x-transition:enter-end="opacity-100 transform -translate-y-0"
@@ -302,15 +316,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div x-data="{ show: false }" class="relative overflow-hidden border-b border-green-100 select-none">
                 <h3  
                 onMouseOver="this.style.color='#f00' "
-                onMouseOut=" this.style.color='#0f0'"
-                style="color:#0f0;"               
+                onMouseOut=" this.style.color='#aaa'"
+                style="color:#aaa;"               
                 
                                  
                 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-green-900  cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-green-400  lg:text-left">
                     <span class = "flex text-left lg:text-left">How can I get an estimate?</span>
                     <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </h3>
-                <p  style= "color:#0f0"  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-green-900 text-center lg:text-left"
+                <p  style= "color:#aaa"  class="px-2 pt-0 -mt-2  sm:text-lg py-7 text-green-900 text-center lg:text-left"
                     x-transition:enter="transition-all ease-out duration-300"
                     x-transition:enter-start="opacity-0 transform -translate-y-4"
                     x-transition:enter-end="opacity-100 transform -translate-y-0"
@@ -330,7 +344,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- Have to adjust for multipage with multiple galleries, probs, if page contains gallery  if 'gallery' in page -->
 
-<section  style= "background-color:#0f0"   class="py-10 bg-green-900">
+<section  style= "background-color:#aaa"   class="py-10 bg-green-900">
     
         <div class="flex flex-col justify-around text-center md:flex-row">
             <p class="order-last text-sm leading-tight text-green-400 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
