@@ -15,7 +15,8 @@
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"> -->
         <link rel="stylesheet" href="https://prophone-templates.vercel.app/assets/output.css">
         
-        <!-- <link rel="stylesheet"  type="text/css"  href="/staticfiles/landing_page_gen/tailwind.css"> -->
+        
+        <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
         <!-- Include Scripts -->
         <!-- Header Component, only used for presentation -->
 
@@ -31,10 +32,7 @@
 <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
 <!-- Focus Visible Polyfill -->
 <script defer src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-        <!-- <link rel="stylesheet" href="/staticfiles/landing_page_gen/style.css" type="text/css"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- 
-        <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script>  -->
 
         <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
         <style>
@@ -222,7 +220,7 @@
                             class="flex items-center justify-center flex-shrink-0 pr-5 bg-white rounded-md  focus:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
                         >
                             <img
-                                class="w-[80px] h-[80px] xl:w-[150px] xl:h-[150px] scale-100 origin-left transition"
+                                class="h-[80px] xl:h-[150px] scale-100 origin-left transition w-auto"
                                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4b9d271e-c59b-425e-b1c1-955c33b8475a.png"
                                 alt="Brand Logo"
                             />
@@ -314,59 +312,48 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;aadded&#x27;, &#x27;copy&#x27;: &#x27;SERVICE 0&#x27;, &#x27;href&#x27;: &#x27;service-SERVICE-0&#x27;}, {&#x27;title&#x27;: &#x27;abc11111dsdf&#x27;, &#x27;copy&#x27;: &#x27;SERVICE 1&#x27;, &#x27;href&#x27;: &#x27;service-SERVICE-1&#x27;}, {&#x27;title&#x27;: &#x27;xyzaddedasdfsdfsdf&#x27;, &#x27;copy&#x27;: &#x27;SERVICE 2&#x27;, &#x27;href&#x27;: &#x27;service-SERVICE-2&#x27;}, {&#x27;title&#x27;: &#x27;asdf&#x27;, &#x27;copy&#x27;: &#x27;NEW SERVICE 3&#x27;, &#x27;href&#x27;: &#x27;service-NEW-SERVICE-3&#x27;}, {&#x27;title&#x27;: &#x27;&#x27;, &#x27;copy&#x27;: &#x27;NEW SERVICE 4&#x27;, &#x27;href&#x27;: &#x27;service-NEW-SERVICE-4&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;short description mtk try 2 212&#x27;, &#x27;copy&#x27;: &#x27;NEW SERVICE 0&#x27;, &#x27;href&#x27;: &#x27;service-NEW-SERVICE-0&#x27;}, {&#x27;title&#x27;: &#x27;The NEW SERVICE 1 service is an expert, thorough, professional service that can help you with any of your needs. We are here to help you get the most out of your experience, and we will work tirelessly to make sure you are satisfied with our service. We are committed to providing you with the best possible&#x27;, &#x27;copy&#x27;: &#x27;NEW SERVICE 1&#x27;, &#x27;href&#x27;: &#x27;service-NEW-SERVICE-1&#x27;}, {&#x27;title&#x27;: &quot;The NEW SERVICE 2 service is a hardworking and reasonably priced service that pays attention to detail. We work diligently to get the job done right, and our customers are always happy with the results. We&#x27;re proud to offer this service, and we&#x27;re sure you&#x27;ll be happy with the results.&quot;, &#x27;copy&#x27;: &#x27;Mowing&#x27;, &#x27;href&#x27;: &#x27;service-Mowing&#x27;}, {&#x27;title&#x27;: &#x27;NEW SERVICE 3 is a hardworking, reasonably priced service that pays attention to detail. We take pride in our work and always put our customers first. We are here to help you with whatever needs you may have, and we will work tirelessly to make sure you are happy with the final product. Contact us today&#x27;, &#x27;copy&#x27;: &#x27;longgggggggg serviceeeee nam eee ee ee&#x27;, &#x27;href&#x27;: &#x27;service-longgggggggg-serviceeeee-nam-eee-ee-ee&#x27;}]"> -->
                                                   
                                                     <a
-                                                        href=" service-SERVICE-0 "
+                                                        href=" service-NEW-SERVICE-0 "
                                                         role="menuitem"
                                                         class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
                                                     >
-                                                        <!-- <p class="text-base font-medium text-gray-900">aadded</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">SERVICE 0</p>
+                                                        <!-- <p class="text-base font-medium text-gray-900">short description mtk try 2 212</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">NEW SERVICE 0</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
                                                  
                                                     <a
-                                                        href=" service-SERVICE-1 "
+                                                        href=" service-NEW-SERVICE-1 "
                                                         role="menuitem"
                                                         class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
                                                     >
-                                                        <!-- <p class="text-base font-medium text-gray-900">abc11111dsdf</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">SERVICE 1</p>
+                                                        <!-- <p class="text-base font-medium text-gray-900">The NEW SERVICE 1 service is an expert, thorough, professional service that can help you with any of your needs. We are here to help you get the most out of your experience, and we will work tirelessly to make sure you are satisfied with our service. We are committed to providing you with the best possible</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">NEW SERVICE 1</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
                                                  
                                                     <a
-                                                        href=" service-SERVICE-2 "
+                                                        href=" service-Mowing "
                                                         role="menuitem"
                                                         class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
                                                     >
-                                                        <!-- <p class="text-base font-medium text-gray-900">xyzaddedasdfsdfsdf</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">SERVICE 2</p>
+                                                        <!-- <p class="text-base font-medium text-gray-900">The NEW SERVICE 2 service is a hardworking and reasonably priced service that pays attention to detail. We work diligently to get the job done right, and our customers are always happy with the results. We&#x27;re proud to offer this service, and we&#x27;re sure you&#x27;ll be happy with the results.</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Mowing</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
                                                  
                                                     <a
-                                                        href=" service-NEW-SERVICE-3 "
+                                                        href=" service-longgggggggg-serviceeeee-nam-eee-ee-ee "
                                                         role="menuitem"
                                                         class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
                                                     >
-                                                        <!-- <p class="text-base font-medium text-gray-900">asdf</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">NEW SERVICE 3</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
-                                                    <a
-                                                        href=" service-NEW-SERVICE-4 "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900"></p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">NEW SERVICE 4</p>
+                                                        <!-- <p class="text-base font-medium text-gray-900">NEW SERVICE 3 is a hardworking, reasonably priced service that pays attention to detail. We take pride in our work and always put our customers first. We are here to help you with whatever needs you may have, and we will work tirelessly to make sure you are happy with the final product. Contact us today</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">longgggggggg serviceeeee nam eee ee ee</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -436,41 +423,8 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;6&#x27;, &#x27;href&#x27;: &#x27;gallery-6&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Grass/Seeding&#x27;, &#x27;href&#x27;: &#x27;gallery-Grass-Seeding&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;3&#x27;, &#x27;href&#x27;: &#x27;gallery-3&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;2&#x27;, &#x27;href&#x27;: &#x27;gallery-2&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;1&#x27;, &#x27;href&#x27;: &#x27;gallery-1&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Test Gallery&#x27;, &#x27;href&#x27;: &#x27;gallery-Test-Gallery&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;2&#x27;, &#x27;href&#x27;: &#x27;gallery-2&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;1&#x27;, &#x27;href&#x27;: &#x27;gallery-1&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Test Gallery&#x27;, &#x27;href&#x27;: &#x27;gallery-Test-Gallery&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Grass/Seeding&#x27;, &#x27;href&#x27;: &#x27;gallery-Grass-Seeding&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;3&#x27;, &#x27;href&#x27;: &#x27;gallery-3&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;6&#x27;, &#x27;href&#x27;: &#x27;gallery-6&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
-                                                    <a
-                                                        href=" gallery-6 "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">6</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
-                                                    <a
-                                                        href=" gallery-Grass-Seeding "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Grass/Seeding</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
-                                                    <a
-                                                        href=" gallery-3 "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">3</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
                                                     <a
                                                         href=" gallery-2 "
                                                         role="menuitem"
@@ -500,6 +454,39 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Test Gallery</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" gallery-Grass-Seeding "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Grass/Seeding</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" gallery-3 "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">3</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" gallery-6 "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">6</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -619,15 +606,14 @@
                     <div class="w-full sm:w-auto">
                         
                         <div class="w-full sm:w-auto">
-                            <a
-                                target = "_blank" 
-                                href="tel:(617) 514-0906"
-                                :class="{'scale-100': !scrolledFromTop, 'scale-75 translate-x-8': scrolledFromTop}"
+                            <button
+                            :class="{'scale-100': !scrolledFromTop, 'scale-75 translate-x-8': scrolledFromTop}"
+                            @click="contactModalOpen = true"
                                 class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition border-2 border-transparent rounded-md  text-primary-foreground focus:outline-none hover:bg-primary-darker sm:w-auto bg-primary focus-visible:ring-2 ring-primary ring-opacity-75 ring-offset-2"
                                 >
-                                Call us
-                            </a>
-                        </div>
+                                text
+                            </button>
+                        </div> 
                         
                             
                      
@@ -638,16 +624,6 @@
                     </div>
                     <!-- CTA Primary-Invert -->
                     <div class="inline-flex w-full ml-3 sm:w-auto">
-                        
-                        <div class="inline-flex w-full ml-3 sm:w-auto">
-                            <a
-                            target = "_blank" href="mailto:None?subject=[company type] Job - Requesting a quote&body=Hi [[Owner Name]],%0d%0a %0d%0a  My name is [your name]. I&#x27;m writing from your website about requesting a quote for a [[company type]] job. I&#x27;ve included my information below - %0d%0a%0d%0a Quick Description: %0d%0a Address: [your address here] %0d%0a Urgency: [low, medium, high] %0d%0a Would like a quote by: [date] %0d%0a Additional notes: %0d%0a %0d%0a Thanks!"
-                            :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
-                            class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
-                            >
-                                Call to action message nav 1 email
-                            </a>
-                        </div>
                         
                     </div>
                 </div>
@@ -675,7 +651,7 @@
                             href="/"
                             class="flex items-center justify-center flex-shrink-0 bg-white rounded-b-lg focus-visible:ring focus:outline-none ring-primary"
                         >
-                            <img class="w-[80px] h-[80px]" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4b9d271e-c59b-425e-b1c1-955c33b8475a.png" alt="Brand Logo" />
+                            <img class="h-[80px]" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4b9d271e-c59b-425e-b1c1-955c33b8475a.png" alt="Brand Logo" />
                         </a>
                     </div>
                     <div class="-mr-2">
@@ -753,33 +729,27 @@
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
-                                                <a href="service-SERVICE-0" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">aadded</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">SERVICE 0</p>
+                                                <a href="service-NEW-SERVICE-0" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">short description mtk try 2 212</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">NEW SERVICE 0</p>
                                                 </a>
                                             <!-- </each> -->
                                             
-                                                <a href="service-SERVICE-1" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">abc11111dsdf</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">SERVICE 1</p>
+                                                <a href="service-NEW-SERVICE-1" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">The NEW SERVICE 1 service is an expert, thorough, professional service that can help you with any of your needs. We are here to help you get the most out of your experience, and we will work tirelessly to make sure you are satisfied with our service. We are committed to providing you with the best possible</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">NEW SERVICE 1</p>
                                                 </a>
                                             <!-- </each> -->
                                             
-                                                <a href="service-SERVICE-2" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">xyzaddedasdfsdfsdf</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">SERVICE 2</p>
+                                                <a href="service-Mowing" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">The NEW SERVICE 2 service is a hardworking and reasonably priced service that pays attention to detail. We work diligently to get the job done right, and our customers are always happy with the results. We&#x27;re proud to offer this service, and we&#x27;re sure you&#x27;ll be happy with the results.</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Mowing</p>
                                                 </a>
                                             <!-- </each> -->
                                             
-                                                <a href="service-NEW-SERVICE-3" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">asdf</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">NEW SERVICE 3</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
-                                                <a href="service-NEW-SERVICE-4" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900"></p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">NEW SERVICE 4</p>
+                                                <a href="service-longgggggggg-serviceeeee-nam-eee-ee-ee" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">NEW SERVICE 3 is a hardworking, reasonably priced service that pays attention to detail. We take pride in our work and always put our customers first. We are here to help you with whatever needs you may have, and we will work tirelessly to make sure you are happy with the final product. Contact us today</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">longgggggggg serviceeeee nam eee ee ee</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -833,24 +803,6 @@
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
-                                                <a href="gallery-6" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">6</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
-                                                <a href="gallery-Grass-Seeding" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Grass/Seeding</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
-                                                <a href="gallery-3" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">3</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
                                                 <a href="gallery-2" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">2</p>
@@ -866,6 +818,24 @@
                                                 <a href="gallery-Test-Gallery" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Test Gallery</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
+                                                <a href="gallery-Grass-Seeding" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Grass/Seeding</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
+                                                <a href="gallery-3" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">3</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
+                                                <a href="gallery-6" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">6</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -927,7 +897,7 @@
                             href="#"
                             class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-secondary bg-gray-50 hover:bg-gray-100"
                             >
-                            Text Us
+                            text
                             <!-- text -->
                             <!-- are these 2 correct? -->
                             </a
@@ -936,8 +906,8 @@
                             href="#"
                             class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-secondary bg-gray-50 hover:bg-gray-100"
                             >
-                            Book Now
-                            <!-- link -->
+                            text
+                            <!-- text -->
                             </a
                         >
                     </div>
@@ -965,7 +935,7 @@
             <div class="flex justify-center w-full mt-8">
                 <!-- CTA Primary -->
                 <div class="w-full sm:w-auto">
-                    <button @click="applyModalOpen = true;" class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition border-2 border-transparent rounded-md sm:py-4 sm:px-10 hover:bg-primary-darker focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 ring-opacity-75 sm:w-auto bg-primary"> Apply Today </button>
+                    <button @click="applyModalOpen = true;" class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition border-2 border-transparent rounded-md sm:py-4 sm:px-10 hover:bg-primary-darker focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 ring-opacity-75 sm:w-auto bg-primary"> text </button>
                 </div>
             </div>
         </header>
@@ -986,13 +956,13 @@
         <!-- Heading -->
         <h2 class="text-3xl font-extrabold sm:text-4xl">
             <span class="block"></span>
-            <span class="block">Apply Today</span>
+            <span class="block">text</span>
         </h2>
         <!-- CTAs -->
         <div class="flex justify-center mt-8">
             <!-- CTA Primary -->
             <div class="w-full sm:w-auto">
-                <button @click="applyModalOpen = true;" class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition border-2 border-transparent rounded-md sm:py-4 sm:px-10 hover:bg-primary-darker focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 ring-opacity-75 sm:w-auto bg-primary"> Apply Today </button>
+                <button @click="applyModalOpen = true;" class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition border-2 border-transparent rounded-md sm:py-4 sm:px-10 hover:bg-primary-darker focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 ring-opacity-75 sm:w-auto bg-primary"> text </button>
             </div>
         </div>
     </div>
@@ -1170,19 +1140,19 @@
                     @click="contactModalOpen = true"
                     class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition border-2 border-transparent rounded-md  sm:py-4 sm:px-10 hover:bg-primary-darker focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 ring-opacity-75 sm:w-auto bg-primary"
                     >
-                    Text Us
+                    text
                 </button>
             </div> 
             
                 
             
             <div class="inline-flex w-full ml-3 sm:w-auto">
-                <a
-                    href="https://prophone.com"
+                <button
+                    @click="contactModalOpen = true"
                     class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  sm:py-4 sm:px-10 hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-offset-2 ring-opacity-75 sm:w-auto text-primary border-primary"
-                >
-                    Book Now
-                </a>
+                    >
+                    text
+                </button>
             </div>
             
 <!--             
@@ -1224,7 +1194,7 @@
                 <div class="flex space-x-6">
                     <!-- are these conditional? and linked to corret links? -->
                     
-                    <a href="http://www.facebook.com" class="text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 ring-primary ring-opacity-75">
+                    <a href="www.facebook.com/bamlandscaping" class="text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 ring-primary ring-opacity-75">
                         <span class="sr-only">Facebook</span>
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path
@@ -1384,27 +1354,44 @@
                                     >Home</a
                                 >
                             </li>
+                            
+                                
+                                <li>
+                                    <a
+                                        href="#gallery"
+                                        class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
+                                        >Gallery</a
+                                    >
+                                </li>
+                                
+                            
+                            
                             <li>
                                 <a
-                                    href="#"
-                                    class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
-                                    >Gallery</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
+                                    href="reviews"
                                     class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
                                     >Reviews</a
                                 >
                             </li>
+                            
+                            
                             <li>
                                 <a
-                                    href="#"
+                                    href="team"
                                     class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
                                     >Team</a
                                 >
                             </li>
+                            
+                            
+                            <li>
+                                <a
+                                    href="jobs"
+                                    class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
+                                    >Jobs</a
+                                >
+                            </li>
+                            
                         </ul>
                     </div>
                     <!-- Services Links -->
@@ -1414,41 +1401,33 @@
                             
                             <li>
                                 <a
-                                    href="service-service-SERVICE-0"
+                                    href="service-NEW-SERVICE-0"
                                     class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
-                                    >SERVICE 0</a
+                                    >NEW SERVICE 0</a
                                 >
                             </li>
                             
                             <li>
                                 <a
-                                    href="service-service-SERVICE-1"
+                                    href="service-NEW-SERVICE-1"
                                     class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
-                                    >SERVICE 1</a
+                                    >NEW SERVICE 1</a
                                 >
                             </li>
                             
                             <li>
                                 <a
-                                    href="service-service-SERVICE-2"
+                                    href="service-Mowing"
                                     class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
-                                    >SERVICE 2</a
+                                    >Mowing</a
                                 >
                             </li>
                             
                             <li>
                                 <a
-                                    href="service-service-NEW-SERVICE-3"
+                                    href="service-longgggggggg-serviceeeee-nam-eee-ee-ee"
                                     class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
-                                    >NEW SERVICE 3</a
-                                >
-                            </li>
-                            
-                            <li>
-                                <a
-                                    href="service-service-NEW-SERVICE-4"
-                                    class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
-                                    >NEW SERVICE 4</a
+                                    >longgggggggg serviceeeee nam eee ee ee</a
                                 >
                             </li>
                             
@@ -1466,7 +1445,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
-                                    >Austin, TX</a
+                                    >Dallas, TX</a
                                 >
                             </li>
                             
@@ -1474,7 +1453,7 @@
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
-                                    >Dallas, TX</a
+                                    >Austin, TX</a
                                 >
                             </li>
                             
@@ -1632,7 +1611,7 @@
                 <!-- Header -->
                 <div class="relative px-6 bg-white">
                     <!-- Title -->
-                    <h2 class="mt-16 mb-2 text-lg font-medium text-center" :id="$id('modal-title')">Send us a text</h2>
+                    <h2 class="mt-6 text-lg font-medium text-center" :id="$id('modal-title')">Send us a text</h2>
                     <!-- Small overlay for scrolling area  -->
                     <div aria-hidden="true" class="absolute inset-x-0 h-8 -bottom-8 bg-gradient-to-b from-white"></div>
                     <button
@@ -1695,7 +1674,7 @@
                                 placeholder="Address"
                             />
                         </div>
-                        <!-- Preferred date of service -->
+                        <!-- Preferred date of service
                         <div>
                             <label for="contact-date" class="sr-only">Preferred Date of Service</label>
                             <input
@@ -1705,9 +1684,9 @@
                                 class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
                                 placeholder="Preferred Date of Service"
                             />
-                        </div>
+                        </div> -->
                         <!-- Promo Code -->
-                        <div>
+                        <!-- <div>
                             <label for="contact-promo-code" class="sr-only">Promo Code</label>
                             <input
                                 type="text"
@@ -1716,7 +1695,7 @@
                                 class="block w-full border-gray-300 py-2.5 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm"
                                 placeholder="Promo Code"
                             />
-                        </div>
+                        </div> -->
                         <!-- How can we help you? (Concern) -->
                         <div>
                             <label for="contact-concern" class="sr-only">How can we help you?</label>
@@ -1732,56 +1711,46 @@
                         <!-- <fieldset>
                             <legend class="text-base font-medium text-gray-900">Services</legend>
                             <div class="mt-2.5 grid gap-y-3.5 grid-cols-2">
-                                5
+                                4
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-78969"
-                                            name="78969"
+                                            id="contact-service-109829"
+                                            name="109829"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-78969" class="ml-3 text-sm font-medium text-gray-700">SERVICE 0</label>
+                                        <label for="contact-label-service-109829" class="ml-3 text-sm font-medium text-gray-700">NEW SERVICE 0</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-78970"
-                                            name="78970"
+                                            id="contact-service-109830"
+                                            name="109830"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-78970" class="ml-3 text-sm font-medium text-gray-700">SERVICE 1</label>
+                                        <label for="contact-label-service-109830" class="ml-3 text-sm font-medium text-gray-700">NEW SERVICE 1</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-78971"
-                                            name="78971"
+                                            id="contact-service-109831"
+                                            name="109831"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-78971" class="ml-3 text-sm font-medium text-gray-700">SERVICE 2</label>
+                                        <label for="contact-label-service-109831" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-78972"
-                                            name="78972"
+                                            id="contact-service-109832"
+                                            name="109832"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-78972" class="ml-3 text-sm font-medium text-gray-700">NEW SERVICE 3</label>
-                                    </div>
-                                
-                                    <div class="flex items-center">
-                                        <input
-                                            id="contact-service-78973"
-                                            name="78973"
-                                            type="checkbox"
-                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
-                                        />
-                                        <label for="contact-label-service-78973" class="ml-3 text-sm font-medium text-gray-700">NEW SERVICE 4</label>
+                                        <label for="contact-label-service-109832" class="ml-3 text-sm font-medium text-gray-700">longgggggggg serviceeeee nam eee ee ee</label>
                                     </div>
                                 
                             </div>
