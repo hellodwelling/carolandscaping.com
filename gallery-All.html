@@ -433,7 +433,7 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;1&#x27;, &#x27;href&#x27;: &#x27;gallery-1&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Test Gallery&#x27;, &#x27;href&#x27;: &#x27;gallery-Test-Gallery&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;3&#x27;, &#x27;href&#x27;: &#x27;gallery-3&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Grass/Seeding&#x27;, &#x27;href&#x27;: &#x27;gallery-Grass-Seeding&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;2&#x27;, &#x27;href&#x27;: &#x27;gallery-2&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;6&#x27;, &#x27;href&#x27;: &#x27;gallery-6&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;1&#x27;, &#x27;href&#x27;: &#x27;gallery-1&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Grass/Seeding&#x27;, &#x27;href&#x27;: &#x27;gallery-Grass-Seeding&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Test Gallery&#x27;, &#x27;href&#x27;: &#x27;gallery-Test-Gallery&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;3&#x27;, &#x27;href&#x27;: &#x27;gallery-3&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;2&#x27;, &#x27;href&#x27;: &#x27;gallery-2&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;6&#x27;, &#x27;href&#x27;: &#x27;gallery-6&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
                                                     <a
                                                         href=" gallery-1 "
@@ -442,6 +442,17 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">1</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" gallery-Grass-Seeding "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Grass/Seeding</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -464,17 +475,6 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">3</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
-                                                    <a
-                                                        href=" gallery-Grass-Seeding "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Grass/Seeding</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -830,6 +830,12 @@
                                                 </a>
                                             <!-- </each> -->
                                             
+                                                <a href="gallery-Grass-Seeding" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Grass/Seeding</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
                                                 <a href="gallery-Test-Gallery" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Test Gallery</p>
@@ -839,12 +845,6 @@
                                                 <a href="gallery-3" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">3</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
-                                                <a href="gallery-Grass-Seeding" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Grass/Seeding</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -1007,7 +1007,7 @@
 <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 8,
+        amountOfImages: 9,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -1112,11 +1112,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4d9ed11a-6805-460d-878d-85ff54d2a0a9.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/720fd33c-9da0-4f9c-bfd9-6e1a73449ee2.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/4d9ed11a-6805-460d-878d-85ff54d2a0a9.png" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4d9ed11a-6805-460d-878d-85ff54d2a0a9.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/4d9ed11a-6805-460d-878d-85ff54d2a0a9.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/720fd33c-9da0-4f9c-bfd9-6e1a73449ee2.png" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/720fd33c-9da0-4f9c-bfd9-6e1a73449ee2.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/720fd33c-9da0-4f9c-bfd9-6e1a73449ee2.png" alt="" /> -->
                             
                         </div>
 
@@ -1133,11 +1133,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/720fd33c-9da0-4f9c-bfd9-6e1a73449ee2.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4d9ed11a-6805-460d-878d-85ff54d2a0a9.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/720fd33c-9da0-4f9c-bfd9-6e1a73449ee2.png" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/720fd33c-9da0-4f9c-bfd9-6e1a73449ee2.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/720fd33c-9da0-4f9c-bfd9-6e1a73449ee2.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/4d9ed11a-6805-460d-878d-85ff54d2a0a9.png" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4d9ed11a-6805-460d-878d-85ff54d2a0a9.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/4d9ed11a-6805-460d-878d-85ff54d2a0a9.png" alt="" /> -->
                             
                         </div>
 
@@ -1180,6 +1180,27 @@
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/6003f432-b1bb-4537-873f-7ccf074c17f8.jpeg" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6003f432-b1bb-4537-873f-7ccf074c17f8.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/6003f432-b1bb-4537-873f-7ccf074c17f8.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/255af790-94a9-4d4e-aeec-1e129bf7c3d1.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/255af790-94a9-4d4e-aeec-1e129bf7c3d1.jpeg" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/255af790-94a9-4d4e-aeec-1e129bf7c3d1.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/255af790-94a9-4d4e-aeec-1e129bf7c3d1.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1274,7 +1295,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4d9ed11a-6805-460d-878d-85ff54d2a0a9.png" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/720fd33c-9da0-4f9c-bfd9-6e1a73449ee2.png" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1282,7 +1303,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/720fd33c-9da0-4f9c-bfd9-6e1a73449ee2.png" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4d9ed11a-6805-460d-878d-85ff54d2a0a9.png" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1299,6 +1320,14 @@
                                     <li class="flex flex-col" x-show="activeImage === 7">
                                             
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6003f432-b1bb-4537-873f-7ccf074c17f8.jpeg" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 8">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/255af790-94a9-4d4e-aeec-1e129bf7c3d1.jpeg" alt="All Photos for Caro&#x27;s Landscaping &amp; Lawncare in Dallas, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1724,7 +1753,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Thu: 8:00am - 6:00pm</a
+                                  >Thu: 0:00am - 0:00am</a
                               >
                           </li>
                           
@@ -1740,7 +1769,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Sat: 0:00am - 0:00am</a
+                                  >Sat: 8:00am - 6:00pm</a
                               >
                           </li>
                           
@@ -1921,42 +1950,42 @@
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-152582"
-                                            name="152582"
+                                            id="contact-service-157104"
+                                            name="157104"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-152582" class="ml-3 text-sm font-medium text-gray-700">NEW SERVICE 0</label>
+                                        <label for="contact-label-service-157104" class="ml-3 text-sm font-medium text-gray-700">NEW SERVICE 0</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-152583"
-                                            name="152583"
+                                            id="contact-service-157105"
+                                            name="157105"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-152583" class="ml-3 text-sm font-medium text-gray-700">NEW SERVICE 1</label>
+                                        <label for="contact-label-service-157105" class="ml-3 text-sm font-medium text-gray-700">NEW SERVICE 1</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-152584"
-                                            name="152584"
+                                            id="contact-service-157106"
+                                            name="157106"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-152584" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
+                                        <label for="contact-label-service-157106" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-152585"
-                                            name="152585"
+                                            id="contact-service-157107"
+                                            name="157107"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-152585" class="ml-3 text-sm font-medium text-gray-700">longgggggggg serviceeeee nam eee ee ee</label>
+                                        <label for="contact-label-service-157107" class="ml-3 text-sm font-medium text-gray-700">longgggggggg serviceeeee nam eee ee ee</label>
                                     </div>
                                 
                             </div>
