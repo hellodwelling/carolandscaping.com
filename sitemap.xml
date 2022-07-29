@@ -151,13 +151,6 @@
     </url>
 
     <url>
-        <loc>https://carolandscaping.com/service-trees</loc>
-        <lastmod>2022-07-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
         <loc>https://carolandscaping.com/service-No-good</loc>
         <lastmod>2022-07-29</lastmod>
         <changefreq>weekly</changefreq>
@@ -173,6 +166,13 @@
 
     <url>
         <loc>https://carolandscaping.com/service-NEW-SERVICE-17</loc>
+        <lastmod>2022-07-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://carolandscaping.com/service-trees</loc>
         <lastmod>2022-07-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
