@@ -1144,7 +1144,7 @@
             <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 5,
+        amountOfImages: 6,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -1166,7 +1166,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             
                                 
-                                    <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/media/9dc4141a-eeab-4b21-b0a8-932e564de24c.png" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
+                                    <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/media/3ec3b5bd-ae7c-4089-9715-e0bf80bdef92.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
                                 
                             
                         </div>
@@ -1185,7 +1185,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             
                                 
-                                    <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/media/05894444-a972-49b2-b999-33c1d6dc9043.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
+                                    <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/media/9dc4141a-eeab-4b21-b0a8-932e564de24c.png" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
                                 
                             
                         </div>
@@ -1204,7 +1204,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             
                                 
-                                    <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/media/58344f31-99a2-4efc-9cde-3bf2ebe682ae.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
+                                    <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/media/05894444-a972-49b2-b999-33c1d6dc9043.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
                                 
                             
                         </div>
@@ -1223,7 +1223,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             
                                 
-                                    <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/media/b78a4388-5719-4cb7-b88b-3e5e23bc5779.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
+                                    <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/media/58344f31-99a2-4efc-9cde-3bf2ebe682ae.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
                                 
                             
                         </div>
@@ -1239,6 +1239,25 @@
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            
+                                
+                                    <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/media/b78a4388-5719-4cb7-b88b-3e5e23bc5779.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
+                                
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
                                 <video class="rounded shadow-md object-contain w-full h-60" loading="lazy" autoplay loop controls muted> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ae25fc7b-f8e9-49e0-bb4d-1c0f73f63a2a.mp4#t=0.5" >
@@ -1299,33 +1318,40 @@
                                 
                                     <li class="flex flex-col" x-show="activeImage === 0">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/684x480/media/9dc4141a-eeab-4b21-b0a8-932e564de24c.png" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/684x480/media/3ec3b5bd-ae7c-4089-9715-e0bf80bdef92.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/684x480/media/05894444-a972-49b2-b999-33c1d6dc9043.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/684x480/media/9dc4141a-eeab-4b21-b0a8-932e564de24c.png" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/684x480/media/58344f31-99a2-4efc-9cde-3bf2ebe682ae.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/684x480/media/05894444-a972-49b2-b999-33c1d6dc9043.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/684x480/media/b78a4388-5719-4cb7-b88b-3e5e23bc5779.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/684x480/media/58344f31-99a2-4efc-9cde-3bf2ebe682ae.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
                                     <li class="flex flex-col" x-show="activeImage === 4">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/filters:strip_exif()/filters:format(webp)/684x480/media/b78a4388-5719-4cb7-b88b-3e5e23bc5779.jpeg" alt="All Photos for caro-landscapings in Kon Kon, Japarsy" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <li class="flex flex-col" x-show="activeImage === 5">
                                         
                                             <video class="gallery-modal-video rounded shadow-md object-contain w-full h-60" loading="lazy" autoplay loop controls muted> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ae25fc7b-f8e9-49e0-bb4d-1c0f73f63a2a.mp4#t=0.5" >
                                             </video>
